@@ -1,16 +1,9 @@
-import { useState } from 'react';
+import Counter from './ex-1025-2/Counter';
 
 function App() {
-	const [total, setTotal] = useState(0);
 	return (
 		<>
-			<h1
-				onClick={() => {
-					setTotal(total + 1);
-				}}
-			>
-				{total}
-			</h1>
+			<Counter />
 		</>
 	);
 }
