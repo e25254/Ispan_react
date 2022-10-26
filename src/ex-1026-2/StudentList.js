@@ -1,5 +1,9 @@
 import { data } from './data/student.js';
+//  json檔案導入時會自動轉成js的資料類型值
+import jsonData from './data/student.json';
+
 console.log(data);
+console.log(jsonData);
 function StudentList() {
 	return (
 		<>
