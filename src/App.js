@@ -1,9 +1,9 @@
-import Counter from './ex-1025-2/Counter';
-
+// import Counter from './ex-1025-2/Counter';
+import JsxValue from './ex-1026-1/JsxValue';
 function App() {
 	return (
 		<>
-			<Counter />
+			<JsxValue />
 		</>
 	);
 }
