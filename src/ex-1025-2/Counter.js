@@ -1,24 +1,20 @@
 import { useState } from 'react';
 import './Counter.css';
 
+let counter123 = 0;
+
 function Counter() {
 	const [total, setTotal] = useState(0);
 	return (
 		<>
-			<div className="card">
-				<img src="..." className="card-img-top" alt="..." />
-				<div className="card-body">
-					<h5 className="card-title">Card title</h5>
-					<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="https:\\google.com" className="btn btn-primary">
-						google.com
-					</a>
-				</div>
-			</div>
 			<h1>{total}</h1>
 			<button
+				className="btn"
 				onClick={() => {
-					setTotal(total + 1);
+					console.log('before total=', total);
+					const newTotal = total + 1;
+					setTotal(newTotal); //	給 react render
+					console.log('after total=', newTotal); //	資料先改變但還沒 render
 				}}
 			>
 				+
