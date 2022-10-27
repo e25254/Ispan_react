@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import './Menu_css.css';
+
 function Menu() {
-	const [activeIndex, setActiveIndex] = useState(-1);
+	const [activeText, setActiveText] = useState('');
 	const menuItems = ['首頁', '關於我們', '產品'];
+
 	return (
 		<>
 			<ul>
@@ -11,10 +13,10 @@ function Menu() {
 						<li
 							key={i}
 							onClick={() => {
-								setActiveIndex(i);
+								setActiveText(v);
 							}}
 						>
-							<a href="#/" className={activeIndex === i ? 'active' : ''}>
+							<a href="#/" className={activeText === v ? 'active' : ''}>
 								{v}
 							</a>
 						</li>
@@ -24,4 +26,5 @@ function Menu() {
 		</>
 	);
 }
+
 export default Menu;
