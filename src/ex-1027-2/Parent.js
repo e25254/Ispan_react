@@ -3,9 +3,7 @@ import Child from './Child';
 function Parent_PropTypes() {
 	return (
 		<>
-			<Child increment={2} />
-			<Child increment={5} />
-			<Child />
+			<Child firstName="Jie" lastName="ChenRay" />
 		</>
 	);
 }
