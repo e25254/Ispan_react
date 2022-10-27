@@ -4,7 +4,7 @@
 import { example } from './examples';
 import { useState } from 'react';
 function App() {
-	const [displayIndex, setDisplayIndex] = useState(3);
+	const [displayIndex, setDisplayIndex] = useState(4);
 	const selection = (
 		<select
 			value={displayIndex}
@@ -23,10 +23,12 @@ function App() {
 	);
 
 	const MyComponent = example[displayIndex].component;
+	const MyPath = example[displayIndex].path;
 
 	return (
 		<>
 			{selection}
+			<p>路徑：{MyPath}</p>
 			<hr />
 			<MyComponent />
 		</>

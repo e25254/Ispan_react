@@ -1,7 +1,8 @@
 import JsxValue from './ex-1026-1/JsxValue';
 import Counter from './ex-1025-2/Counter';
 import StudentList from './ex-1026-2/StudentList';
-import Menu from './menu/Menu_my';
+import Menu from './ex-1026-menu/Menu_my';
+import Demo from './ex-1026-3/Demo';
 
 export const example = [
 	{
@@ -21,7 +22,12 @@ export const example = [
 	},
 	{
 		name: 'menu 選單項目點亮(active)特效',
-		path: './menu/Menu',
+		path: './ex-1026-menu/Menu',
 		component: Menu,
+	},
+	{
+		name: '1026-3 Demo',
+		path: './ex-1026-3/Demo',
+		component: Demo,
 	},
 ];
