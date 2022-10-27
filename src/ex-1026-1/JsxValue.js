@@ -16,9 +16,9 @@ function JsxValue() {
 			<h2>Boolean</h2>
 			{true}
 			{false}
-			<h2>null</h2>
+			<h2>Null</h2>
 			{null}
-			<h2>undefinded</h2>
+			<h2>Undefined</h2>
 			{undefined}
 			<h2>Array</h2>
 			{[1, 2, 3, 4]}

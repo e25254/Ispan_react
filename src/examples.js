@@ -3,6 +3,7 @@ import Counter from './ex-1025-2/Counter';
 import StudentList from './ex-1026-2/StudentList';
 import Menu from './ex-1026-menu/Menu_my';
 import Demo from './ex-1026-3/Demo';
+import Parent from './ex-1027-1/Parent';
 
 export const example = [
 	{
@@ -29,5 +30,10 @@ export const example = [
 		name: '1026-3 Demo',
 		path: './ex-1026-3/Demo',
 		component: Demo,
+	},
+	{
+		name: '1027-1 Parent&Child',
+		path: './ex-1027-1',
+		component: Parent,
 	},
 ];
