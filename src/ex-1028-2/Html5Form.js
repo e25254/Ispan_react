@@ -3,10 +3,10 @@ import { useState } from 'react';
 function InputDemo() {
 	const [inputTextBox, setInputTextBox] = useState('');
 	const [textAreaText, setTextAreaText] = useState('');
-	const [agree, setAgree] = useState('false');
+	const [agree, setAgree] = useState(false);
 
 	//記錄使用者選了哪個值
-	const [gender, setGender] = useState('男');
+	const [gender, setGender] = useState('');
 
 	const genderOptions = ['男', '女', '不提供'];
 
