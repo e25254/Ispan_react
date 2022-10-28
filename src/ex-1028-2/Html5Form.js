@@ -15,7 +15,6 @@ function InputDemo() {
 
 	const [likeList, setLikeList] = useState([]);
 	const fruitOptions = ['芒果', '蘋果', '香蕉'];
-	const gender_radio = useRef(null);
 
 	return (
 		<>
