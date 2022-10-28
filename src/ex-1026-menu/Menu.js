@@ -5,7 +5,7 @@ function Menu() {
 	const menuItems = ['首頁', '關於我們', '產品'];
 	return (
 		<>
-			<ul>
+			<ul className="Menu_ul">
 				{menuItems.map((v, i) => {
 					return (
 						<li
@@ -14,7 +14,7 @@ function Menu() {
 								setActiveIndex(i);
 							}}
 						>
-							<a href="#/" className={activeIndex === i ? 'active' : ''}>
+							<a href="#/" className={`${activeIndex === i ? 'active' : ''} ${`Menu_a`}`}>
 								{v}
 							</a>
 						</li>

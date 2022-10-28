@@ -9,8 +9,20 @@ import ParentFlow from './ex-1027-3/Parent';
 import Parent_Flow_Practice from './ex-1027-3_practice/Parent_Flow_Practice';
 import InputDemoBox from './ex-1028-1/InputDemoBox';
 import Html5Form from './ex-1028-2/Html5Form';
+import testArray from './testArray';
+import BmiComputer from './HomeWork_1028/BmiComputer';
 
 export const example = [
+	{
+		name: 'BmiComputer',
+		path: './HomeWork_1028',
+		component: BmiComputer,
+	},
+	{
+		name: 'testArray',
+		path: './',
+		component: testArray,
+	},
 	{
 		name: '1028-2 各種可控的表單元件',
 		path: './ex-1028-2',
