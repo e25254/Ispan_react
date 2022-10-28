@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 function InputDemo() {
 	const [inputTextBox, setInputTextBox] = useState('');
@@ -15,6 +15,7 @@ function InputDemo() {
 
 	const [likeList, setLikeList] = useState([]);
 	const fruitOptions = ['芒果', '蘋果', '香蕉'];
+	const gender_radio = useRef(null);
 
 	return (
 		<>
@@ -37,19 +38,21 @@ function InputDemo() {
 
 			<h1>核取方塊(checkbox single)</h1>
 			<input
+				id="agree_checkbox"
 				type="checkbox"
 				checked={agree}
 				onChange={(e) => {
 					setAgree(e.target.checked);
 				}}
 			/>
-			<label>我同意會員註冊條款</label>
+			<label htmlFor="agree_checkbox">我同意會員註冊條款</label>
 
 			<h1>選項按鈕群組(radio group)</h1>
 			{genderOptions.map((v, i) => {
 				return (
 					<div key={i}>
 						<input
+							id={`gender_radio_${i}`}
 							type="radio"
 							checked={gender === v}
 							value={v}
@@ -57,7 +60,7 @@ function InputDemo() {
 								setGender(e.target.value);
 							}}
 						/>
-						<label>{v}</label>
+						<label htmlFor={`gender_radio_${i}`}>{v}</label>
 					</div>
 				);
 			})}
@@ -84,6 +87,7 @@ function InputDemo() {
 				return (
 					<div key={i}>
 						<input
+							id={`fruitOptions_checkbox_${i}`}
 							type="checkbox"
 							checked={likeList.includes(v)}
 							value={v}
@@ -103,7 +107,7 @@ function InputDemo() {
 								}
 							}}
 						/>
-						<label>{v}</label>
+						<label htmlFor={`fruitOptions_checkbox_${i}`}>{v}</label>
 					</div>
 				);
 			})}
