@@ -6,8 +6,20 @@ import Demo from './ex-1026-3/Demo';
 import Parent from './ex-1027-1/Parent';
 import Parent_PropTypes from './ex-1027-2/Parent';
 import ParentFlow from './ex-1027-3/Parent';
+import Parent_Flow_Practice from './ex-1027-3_practice/Parent_Flow_Practice';
+import InputDemoBox from './ex-1028-1/InputDemoBox';
 
 export const example = [
+	{
+		name: '1028-1 InputDemoBox',
+		path: './ex-1028-1',
+		component: InputDemoBox,
+	},
+	{
+		name: '1027-3 Parent_Flow_Practice',
+		path: './ex-1027-3_practice',
+		component: Parent_Flow_Practice,
+	},
 	{
 		name: '1027-3 Parent_Flow',
 		path: './ex-1027-3',
