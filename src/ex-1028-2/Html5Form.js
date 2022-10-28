@@ -13,7 +13,7 @@ function InputDemo() {
 	const [pet, setPet] = useState('');
 	const petOptions = ['貓', '狗', '魚'];
 
-	const [likeList, setLikeList] = useState(['蘋果', '香蕉']);
+	const [likeList, setLikeList] = useState([]);
 	const fruitOptions = ['芒果', '蘋果', '香蕉'];
 
 	return (
