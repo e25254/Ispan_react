@@ -8,10 +8,16 @@ import Parent_PropTypes from './ex-1027-2/Parent';
 import ParentFlow from './ex-1027-3/Parent';
 import Parent_Flow_Practice from './ex-1027-3_practice/Parent_Flow_Practice';
 import InputDemoBox from './ex-1028-1/InputDemoBox';
+import Html5Form from './ex-1028-2/Html5Form';
 
 export const example = [
 	{
-		name: '1028-1 InputDemoBox',
+		name: '1028-2 各種可控的表單元件',
+		path: './ex-1028-2',
+		component: Html5Form,
+	},
+	{
+		name: '1028-1 可控與不可控表單元件',
 		path: './ex-1028-1',
 		component: InputDemoBox,
 	},
@@ -21,7 +27,7 @@ export const example = [
 		component: Parent_Flow_Practice,
 	},
 	{
-		name: '1027-3 Parent_Flow',
+		name: '1027-3 三種資料流 ParentFlow',
 		path: './ex-1027-3',
 		component: ParentFlow,
 	},
