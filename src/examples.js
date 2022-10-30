@@ -11,46 +11,52 @@ import InputDemoBox from './ex-1028-1/InputDemoBox';
 import Html5Form from './ex-1028-2/Html5Form';
 import testArray from './testArray';
 import BmiComputer from './HomeWork_1028/BmiComputer';
+import Have18 from './HomeWork_1028/Have18';
 
 export const example = [
 	{
+		name: 'Have18',
+		path: './HomeWork_1028/Have18',
+		component: Have18,
+	},
+	{
 		name: 'BmiComputer',
-		path: './HomeWork_1028',
+		path: './HomeWork_1028/BmiComputer',
 		component: BmiComputer,
 	},
 	{
 		name: 'testArray',
-		path: './',
+		path: './testArray',
 		component: testArray,
 	},
 	{
 		name: '1028-2 各種可控的表單元件',
-		path: './ex-1028-2',
+		path: './ex-1028-2/Html5Form',
 		component: Html5Form,
 	},
 	{
 		name: '1028-1 可控與不可控表單元件',
-		path: './ex-1028-1',
+		path: './ex-1028-1/InputDemoBox',
 		component: InputDemoBox,
 	},
 	{
 		name: '1027-3 Parent_Flow_Practice',
-		path: './ex-1027-3_practice',
+		path: './ex-1027-3_practice/Parent_Flow_Practice',
 		component: Parent_Flow_Practice,
 	},
 	{
 		name: '1027-3 三種資料流 ParentFlow',
-		path: './ex-1027-3',
+		path: './ex-1027-3/ParentFlow',
 		component: ParentFlow,
 	},
 	{
 		name: '1027-2 Paren_PropTypes',
-		path: './ex-1027-2',
+		path: './ex-1027-2/Parent_PropTypes',
 		component: Parent_PropTypes,
 	},
 	{
 		name: '1027-1 Parent&Child',
-		path: './ex-1027-1',
+		path: './ex-1027-1/Parent',
 		component: Parent,
 	},
 	{
