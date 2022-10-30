@@ -1,8 +1,9 @@
 import { useState } from 'react';
+import './Have18_css.css';
 
 function Have18() {
 	const yearSelect = [];
-	for (let i = 1920; i <= 2010; i++) {
+	for (let i = 1920; i <= 2022; i++) {
 		yearSelect.push(i);
 	}
 	// console.log(yearSelect);
@@ -21,12 +22,15 @@ function Have18() {
 	const [day, setDay] = useState('');
 
 	const [yes18, setYes18] = useState('');
+	const [yes18Class, setYes18Class] = useState('');
+
 	let yearChoose = Number(1920 + year);
 	let monthChoose = Number(1 + month);
 	let dayChoose = Number(1 + day);
-	let myBirth = `${yearChoose}/${monthChoose}/${dayChoose}`;
-	console.log(myBirth);
-    //todo 把生日換成毫秒
+	let myBirth = +new Date(`${yearChoose}/${monthChoose}/${dayChoose}`);
+	// console.log(myBirth);
+	let nowTime = +new Date();
+	// console.log(nowTime);
 	if (monthChoose === 2) {
 		if ((yearChoose % 4 === 0 && yearChoose % 100 !== 0) || yearChoose % 400 === 0) {
 			daySelect.length = 29;
@@ -92,12 +96,19 @@ function Have18() {
 			</select>
 			<button
 				onClick={() => {
-					setYes18('');
+					if (nowTime - myBirth >= 568036800000) {
+						setYes18Class('setYes18Class_green');
+						setYes18('滿十八歲');
+					} else {
+						setYes18Class('setYes18Class_red');
+						setYes18('未滿十八歲');
+					}
+					// setYes18('');
 				}}
 			>
 				檢查是否滿18
 			</button>
-			<h1>{yes18}</h1>
+			<h1 className={yes18Class}>{yes18}</h1>
 		</>
 	);
 }
