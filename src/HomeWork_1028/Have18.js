@@ -24,76 +24,89 @@ function Have18() {
 	const [yes18, setYes18] = useState('');
 	const [yes18Class, setYes18Class] = useState('');
 
-	let yearChoose = Number(1920 + year);
-	let monthChoose = Number(1 + month);
-	let dayChoose = Number(1 + day);
-	let myBirth = +new Date(`${yearChoose}/${monthChoose}/${dayChoose}`);
+	let myBirth = +new Date(`${year}/${month}/${day}`);
 	// console.log(myBirth);
 	let nowTime = +new Date();
 	// console.log(nowTime);
-	if (monthChoose === 2) {
-		if ((yearChoose % 4 === 0 && yearChoose % 100 !== 0) || yearChoose % 400 === 0) {
+	if (month === 2) {
+		if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
 			daySelect.length = 29;
 		} else {
 			daySelect.length = 28;
 		}
-	} else if (monthChoose === 4) {
+	} else if (month === 4) {
 		daySelect.length = 30;
-	} else if (monthChoose === 6) {
+	} else if (month === 6) {
 		daySelect.length = 30;
-	} else if (monthChoose === 9) {
+	} else if (month === 9) {
 		daySelect.length = 30;
-	} else if (monthChoose === 11) {
+	} else if (month === 11) {
 		daySelect.length = 30;
 	}
 	// console.log(daySelect);
 	return (
 		<>
-			<select
-				value={year}
-				onChange={(e) => {
-					setYear(Number(e.target.value));
-				}}
-			>
-				{/* 年 */}
-				{yearSelect.map((v, i) => {
-					return (
-						<option key={i} value={i}>
-							{v}
-						</option>
-					);
-				})}
-			</select>
-			<select
-				value={month}
-				onChange={(e) => {
-					setMonth(Number(e.target.value));
-				}}
-			>
-				{/* 月 */}
-				{monthSelect.map((v, i) => {
-					return (
-						<option key={i} value={i}>
-							{v}
-						</option>
-					);
-				})}
-			</select>
-			<select
-				value={day}
-				onChange={(e) => {
-					setDay(Number(e.target.value));
-				}}
-			>
-				{/* 日 */}
-				{daySelect.map((v, i) => {
-					return (
-						<option key={i} value={i}>
-							{v}
-						</option>
-					);
-				})}
-			</select>
+			<span>
+				西元
+				<select
+					value={year}
+					onChange={(e) => {
+						setYear(Number(e.target.value));
+					}}
+				>
+					{/* 年 */}
+					<option value={''}>請選擇</option>
+					{yearSelect.map((v, i) => {
+						return (
+							<option key={i} value={v}>
+								{v}
+							</option>
+						);
+					})}
+				</select>
+				年
+			</span>
+			<span>
+				<select
+					value={month}
+					onChange={(e) => {
+						setMonth(Number(e.target.value));
+					}}
+				>
+					{/* 月 */}
+					<option value={''}>請選擇</option>
+					{year !== '' &&
+						monthSelect.map((v, i) => {
+							return (
+								<option key={i} value={v}>
+									{v}
+								</option>
+							);
+						})}
+				</select>
+				月
+			</span>
+			<span>
+				<select
+					value={day}
+					onChange={(e) => {
+						setDay(Number(e.target.value));
+					}}
+				>
+					{/* 日 */}
+					<option value={''}>請選擇</option>
+					{year !== '' &&
+						month !== '' &&
+						daySelect.map((v, i) => {
+							return (
+								<option key={i} value={v}>
+									{v}
+								</option>
+							);
+						})}
+				</select>
+				日
+			</span>
 			<button
 				onClick={() => {
 					if (nowTime - myBirth >= 568036800000) {

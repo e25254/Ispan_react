@@ -17,7 +17,7 @@ function BmiComputer() {
 
 				<h2>身高</h2>
 				<input
-					type="text"
+					type="number"
 					value={BMIHeight}
 					onChange={(e) => {
 						setBMIHeight(e.target.value);
@@ -27,7 +27,7 @@ function BmiComputer() {
 
 				<h2>體重</h2>
 				<input
-					type="text"
+					type="number"
 					value={BMIWeight}
 					onChange={(e) => {
 						setBMIWeight(e.target.value);
