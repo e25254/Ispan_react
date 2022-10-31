@@ -28,6 +28,8 @@ function Have18() {
 	// console.log(myBirth);
 	let nowTime = +new Date();
 	// console.log(nowTime);
+
+	// 判斷每年每個月份有幾天： new Date(year, month, 0).getDate()
 	if (month === 2) {
 		if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
 			daySelect.length = 29;
@@ -109,6 +111,10 @@ function Have18() {
 			</span>
 			<button
 				onClick={() => {
+					if (year === '' || month === '' || day === '') {
+						alert('請先選擇出生年月日');
+						return;
+					}
 					if (nowTime - myBirth >= 568036800000) {
 						setYes18Class('setYes18Class_green');
 						setYes18('滿十八歲');
@@ -116,7 +122,6 @@ function Have18() {
 						setYes18Class('setYes18Class_red');
 						setYes18('未滿十八歲');
 					}
-					// setYes18('');
 				}}
 			>
 				檢查是否滿18
