@@ -2,11 +2,13 @@ import { useState } from 'react';
 import './TodoApp.css';
 
 import AddForm from './AddForm';
-import TodoList from './TodoList/index';
 
 function TodoApp_Homework() {
+	const [inputValue, setInputValue] = useState('');
+	// 處理要避開輸入法拼字用Enter的指標
+	const [isComposition, setIsComposition] = useState(false);
 	// 編輯用
-	//const [inputEditingValue, setInputEditingValue] = useState('')
+	const [inputEditingValue, setInputEditingValue] = useState('');
 
 	const [todos, setTodos] = useState([
 		{
@@ -81,7 +83,81 @@ function TodoApp_Homework() {
 		<>
 			<h1>Todo待辨事項</h1>
 			<AddForm addTodo={addTodo} />
-			<TodoList todos={todos} toggleTodoCompleted={toggleTodoCompleted} toggleTodoEditing={toggleTodoEditing} updateTodo={updateTodo} deleteTodo={deleteTodo} />
+			<ul>
+				{todos.map((v, i) => {
+					// 重要！ key值會因索引值變後也會改變，這裡不能用索引值當key
+					return (
+						<li key={v.id} className={v.completed ? 'completed' : 'not-completed'}>
+							<input
+								type="checkbox"
+								checked={v.completed}
+								onChange={() => {
+									toggleTodoCompleted(v.id);
+								}}
+							/>
+							{v.editing ? (
+								<input
+									type="text"
+									value={inputEditingValue}
+									onChange={(e) => {
+										setInputEditingValue(e.target.value);
+									}}
+									onKeyDown={(e) => {
+										// 中文輸入期間不會加入到列表中
+										if (e.key === 'Enter' && isComposition === false) {
+											updateTodo(v.id, {
+												text: inputEditingValue,
+												editing: false,
+											});
+										}
+									}}
+								/>
+							) : (
+								<span
+									onDoubleClick={() => {
+										toggleTodoEditing(v.id);
+										setInputEditingValue(v.text);
+									}}
+								>
+									{v.text}
+								</span>
+							)}
+							{v.editing ? (
+								<button
+									onClick={() => {
+										updateTodo(v.id, {
+											text: inputEditingValue,
+											editing: false,
+										});
+									}}
+								>
+									儲存
+								</button>
+							) : (
+								<button
+									hidden
+									onClick={() => {
+										toggleTodoEditing(v.id);
+										setInputEditingValue(v.text);
+									}}
+								>
+									編輯
+								</button>
+							)}
+							<button
+								onClick={() => {
+									deleteTodo(v.id);
+								}}
+							>
+								X
+							</button>
+						</li>
+					);
+				})}
+			</ul>
+			<button>All</button>
+			<button>Active</button>
+			<button>Completed</button>
 		</>
 	);
 }

@@ -1,6 +1,5 @@
 import EditForm from './EditForm';
 import TodoText from './TodoText';
-// eslint-disable-next-line no-unused-vars
 import { useState } from 'react';
 
 function TodoItem({ todo, toggleTodoCompleted, toggleTodoEditing, updateTodo, deleteTodo }) {
