@@ -15,14 +15,8 @@ import Have18 from './HomeWork_1028/Have18';
 import BMI from './ex-1031-1/BMI';
 import BirthSelect from './ex-1031-2/BirthSelect';
 import TodoApp from './ex-1031-3/TodoApp';
-import TodoApp_Homework from './Homework_1101/TodoApp';
 
 export const example = [
-	{
-		name: 'TodoApp_Homework',
-		path: './Homework_1101/TodoApp',
-		component: TodoApp_Homework,
-	},
 	{
 		name: 'TodoApp',
 		path: './ex-1031-3/TodoApp',
