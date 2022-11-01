@@ -18,8 +18,14 @@ import TodoApp from './ex-1031-3/TodoApp';
 import TodoApp_noAdd from './ex-1031-4/TodoApp_noAdd';
 import MultipleInput from './ex-1101-1/MultipleInput';
 import App_Slider from './testComponent/App_Slider';
+import App_DatePicker from './testComponent/App_DatePicker';
 
 export const example = [
+	{
+		name: 'App_DatePicker',
+		path: './testComponent/App_DatePicker',
+		component: App_DatePicker,
+	},
 	{
 		name: 'App_Slider',
 		path: './testComponent/App_Slider',
