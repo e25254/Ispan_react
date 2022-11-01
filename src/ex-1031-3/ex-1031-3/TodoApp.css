@@ -1,9 +1,0 @@
-.completed {
-    text-decoration: line-through;
-    color:gray;
-}
-
-.not-completed {
-    color: green;
-    font-weight: bold;
-}
