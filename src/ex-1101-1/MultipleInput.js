@@ -24,11 +24,22 @@ function MultipleInput() {
 	return (
 		<>
 			<label>帳號：</label>
-			<input type="text" name="username" value={user.username} onChange={handleFieldChange} />
+			<input
+				type="text"
+				name="username"
+				value={user.username}
+				onChange={handleFieldChange}
+			/>
 			<br />
 			<div className="MultipleInput_passwordBox">
 				<label>密碼：</label>
-				<input className="MultipleInput_password" type={show ? 'text' : 'password'} name="password" value={user.password} onChange={handleFieldChange} />
+				<input
+					className="MultipleInput_password"
+					type={show ? 'text' : 'password'}
+					name="password"
+					value={user.password}
+					onChange={handleFieldChange}
+				/>
 				<label className="MultipleInput_eye">
 					<FaEye
 						className={show ? '' : 'MultipleInput_hidden'}
