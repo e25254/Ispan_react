@@ -96,7 +96,9 @@ function TodoApp_noAdd() {
 			/>
 			<button
 				onClick={() => {
-					setTodosDisplay(todos.filter((v, i) => v.text.includes(keyword)));
+					setTodosDisplay(
+						todos.filter((v, i) => v.text.includes(keyword))
+					);
 				}}
 			>
 				搜尋
@@ -123,7 +125,13 @@ function TodoApp_noAdd() {
 			>
 				已完成
 			</button>
-			<TodoList todos={todosDisplay} toggleTodoCompleted={toggleTodoCompleted} toggleTodoEditing={toggleTodoEditing} updateTodo={updateTodo} deleteTodo={deleteTodo} />
+			<TodoList
+				todos={todosDisplay}
+				toggleTodoCompleted={toggleTodoCompleted}
+				toggleTodoEditing={toggleTodoEditing}
+				updateTodo={updateTodo}
+				deleteTodo={deleteTodo}
+			/>
 		</>
 	);
 }
