@@ -19,9 +19,16 @@ function TodoApp_noAdd() {
 	const [todos, setTodos] = useState(sample);
 
 	// 呈現用(經搜尋或過濾用)
-	const [todosDisplay, setTodosDisplay] = useState(sample);
+	//const [todosDisplay, setTodosDisplay] = useState(sample)
 
-	const [keyword, setKeyword] = useState('');
+	// 使用全app過濾條件 'all' | 'active' | 'completed'
+	const [todosDisplay, setTodosDisplay] = useState('all');
+
+	// 輸入用(可控表單元件用)
+	const [inputKeyword, setInputKeyword] = useState('');
+
+	// 按下搜尋按鈕用，真正搜尋用
+	const [searchKeyword, setSearchKeyWord] = useState('');
 
 	const addTodo = (text) => {
 		// id
@@ -89,16 +96,15 @@ function TodoApp_noAdd() {
 			<hr />
 			<input
 				type="text"
-				value={keyword}
+				value={inputKeyword}
 				onChange={(e) => {
-					setKeyword(e.target.value);
+					setInputKeyword(e.target.value);
 				}}
 			/>
 			<button
 				onClick={() => {
-					setTodosDisplay(
-						todos.filter((v, i) => v.text.includes(keyword))
-					);
+					setSearchKeyWord(inputKeyword);
+					// setTodosDisplay(todos.filter((v, i) => v.text.includes(keyword)))
 				}}
 			>
 				搜尋
@@ -106,27 +112,32 @@ function TodoApp_noAdd() {
 			<hr />
 			<button
 				onClick={() => {
-					setTodosDisplay(todos);
+					//setTodosDisplay(todos)
+					setTodosDisplay('all');
 				}}
 			>
 				全部
 			</button>
 			<button
 				onClick={() => {
-					setTodosDisplay(todos.filter((v, i) => !v.completed));
+					setTodosDisplay('active');
+					// setTodosDisplay(todos.filter((v, i) => !v.completed))
 				}}
 			>
 				進行中
 			</button>
 			<button
 				onClick={() => {
-					setTodosDisplay(todos.filter((v, i) => v.completed));
+					setTodosDisplay('completed');
+					//setTodosDisplay(todos.filter((v, i) => v.completed))
 				}}
 			>
 				已完成
 			</button>
 			<TodoList
-				todos={todosDisplay}
+				todos={todos}
+				searchKeyword={searchKeyword}
+				todosDisplay={todosDisplay}
 				toggleTodoCompleted={toggleTodoCompleted}
 				toggleTodoEditing={toggleTodoEditing}
 				updateTodo={updateTodo}

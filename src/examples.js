@@ -17,8 +17,14 @@ import BirthSelect from './ex-1031-2/BirthSelect';
 import TodoApp from './ex-1031-3/TodoApp';
 import TodoApp_noAdd from './ex-1031-4/TodoApp_noAdd';
 import MultipleInput from './ex-1101-1/MultipleInput';
+import App_Slider from './testComponent/App_Slider';
 
 export const example = [
+	{
+		name: 'App_Slider',
+		path: './testComponent/App_Slider',
+		component: App_Slider,
+	},
 	{
 		name: 'MultipleInput',
 		path: './ex-1101-1/MultipleInput',

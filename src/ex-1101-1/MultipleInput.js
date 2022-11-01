@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaEye } from 'react-icons/fa';
+import { GiSurroundedEye } from 'react-icons/gi';
 import { FaEyeSlash } from 'react-icons/fa';
 import './MultipleInput.css';
 
@@ -41,7 +41,7 @@ function MultipleInput() {
 					onChange={handleFieldChange}
 				/>
 				<label className="MultipleInput_eye">
-					<FaEye
+					<GiSurroundedEye
 						className={show ? '' : 'MultipleInput_hidden'}
 						onClick={() => {
 							setShow(false);
