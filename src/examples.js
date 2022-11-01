@@ -15,8 +15,20 @@ import Have18 from './HomeWork_1028/Have18';
 import BMI from './ex-1031-1/BMI';
 import BirthSelect from './ex-1031-2/BirthSelect';
 import TodoApp from './ex-1031-3/TodoApp';
+import TodoApp_noAdd from './ex-1031-4/TodoApp_noAdd';
+import MultipleInput from './ex-1101-1/MultipleInput';
 
 export const example = [
+	{
+		name: 'MultipleInput',
+		path: './ex-1101-1/MultipleInput',
+		component: MultipleInput,
+	},
+	{
+		name: 'TodoApp_noAdd',
+		path: './ex-1031-4/TodoApp_noAdd',
+		component: TodoApp_noAdd,
+	},
 	{
 		name: 'TodoApp',
 		path: './ex-1031-3/TodoApp',
