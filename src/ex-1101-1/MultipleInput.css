@@ -1,6 +1,7 @@
 .MultipleInput_passwordBox {
 	display: flex;
 	align-items: center;
+	position: relative;
 }
 .MultipleInput_password {
 	box-sizing: border-box;
@@ -8,7 +9,8 @@
 .MultipleInput_eye {
 	display: flex;
 	align-items: center;
-	transform: translateX(-20px);
+	position: relative;
+	left: -20px;
 	color: rgb(128, 128, 128);
     cursor: pointer;
 }

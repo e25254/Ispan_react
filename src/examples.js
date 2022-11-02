@@ -19,8 +19,14 @@ import TodoApp_noAdd from './ex-1031-4/TodoApp_noAdd';
 import MultipleInput from './ex-1101-1/MultipleInput';
 import App_Slider from './testComponent/App_Slider';
 import App_DatePicker from './testComponent/App_DatePicker';
+import HTML5ValidForm from './ex-1102-1/HTML5ValidForm';
 
 export const example = [
+	{
+		name: 'HTML5ValidForm',
+		path: './ex-1102-1/HTML5ValidForm',
+		component: HTML5ValidForm,
+	},
 	{
 		name: 'App_DatePicker',
 		path: './testComponent/App_DatePicker',
