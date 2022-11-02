@@ -20,10 +20,16 @@ import MultipleInput from './ex-1101-1/MultipleInput';
 import App_Slider from './testComponent/App_Slider';
 import App_DatePicker from './testComponent/App_DatePicker';
 import HTML5ValidForm from './ex-1102-1/HTML5ValidForm';
+import LifeCycle from './ex-1102-2/LifeCycle';
 
 export const example = [
 	{
-		name: 'HTML5ValidForm',
+		name: 'LifeCycle 生命週期方法',
+		path: './ex-1102-2/LifeCycle',
+		component: LifeCycle,
+	},
+	{
+		name: 'HTML5ValidForm HTML5表單驗證',
 		path: './ex-1102-1/HTML5ValidForm',
 		component: HTML5ValidForm,
 	},
@@ -38,7 +44,7 @@ export const example = [
 		component: App_Slider,
 	},
 	{
-		name: 'MultipleInput',
+		name: 'MultipleInput 多個表單元素共用單一state',
 		path: './ex-1101-1/MultipleInput',
 		component: MultipleInput,
 	},

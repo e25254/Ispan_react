@@ -1,7 +1,6 @@
 .MultipleInput_passwordBox {
 	display: flex;
 	align-items: center;
-	position: relative;
 }
 .MultipleInput_password {
 	box-sizing: border-box;

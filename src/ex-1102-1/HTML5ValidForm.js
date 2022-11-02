@@ -121,7 +121,9 @@ function HTML5ValidForm() {
 							}}
 						/>
 					</label>
-					<span style={{ paddingLeft: '15px', color: 'red' }}>
+					<span
+						style={{ transform: 'translateX(1px)', color: 'red' }}
+					>
 						{fieldErrors.password}
 					</span>
 				</div>
