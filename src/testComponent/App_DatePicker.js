@@ -1,4 +1,5 @@
-import { DatePicker, Space } from 'antd';
+import { DatePicker, Space, Calendar } from 'antd';
+import './App_DatePicker.css';
 import React, { useState } from 'react';
 import moment from 'moment/moment';
 import locale from 'antd/es/date-picker/locale/zh_TW';
@@ -9,6 +10,9 @@ const App_DatePicker = () => {
 		endTime: '',
 		days: '',
 	});
+	const onPanelChange = (value, mode) => {
+		console.log(value.format('YYYY-MM-DD'), mode);
+	};
 	return (
 		<>
 			<Space direction="vertical" size={12}>
@@ -33,6 +37,10 @@ const App_DatePicker = () => {
 			<input value={pickDate.startTime} readOnly />
 			<input value={pickDate.endTime} readOnly />
 			<input value={pickDate.days + '晚'} readOnly />
+			{/* TODO: 新增一個大日曆 兩個日曆能夠連動 */}
+			<div className="site-calendar-demo-card">
+				<Calendar fullscreen={false} onPanelChange={onPanelChange} />
+			</div>
 		</>
 	);
 };

@@ -21,8 +21,14 @@ import App_Slider from './testComponent/App_Slider';
 import App_DatePicker from './testComponent/App_DatePicker';
 import HTML5ValidForm from './ex-1102-1/HTML5ValidForm';
 import LifeCycle from './ex-1102-2/LifeCycle';
+import User from './ex-1102-3/User';
 
 export const example = [
+	{
+		name: 'User 從伺服器載入資料',
+		path: './ex-1102-3/User',
+		component: User,
+	},
 	{
 		name: 'LifeCycle 生命週期方法',
 		path: './ex-1102-2/LifeCycle',

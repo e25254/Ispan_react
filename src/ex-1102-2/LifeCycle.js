@@ -1,12 +1,23 @@
+import { useState } from 'react';
 import FC from './FC';
 import CC from './CC';
 
-function LifeCycle() {
+function Lifecycle() {
+	const [show, setShow] = useState(true);
+
 	return (
 		<>
-			<CC />
-			<FC />
+			{/* {show && <CC />} */}
+			{show && <FC />}
+			<button
+				onClick={() => {
+					setShow(!show);
+				}}
+			>
+				{show ? '再見' : '回來吧'}
+			</button>
 		</>
 	);
 }
-export default LifeCycle;
+
+export default Lifecycle;
