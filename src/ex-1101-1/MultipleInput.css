@@ -1,9 +1,10 @@
 .MultipleInput_passwordBox {
 	display: flex;
 	align-items: center;
+	box-sizing: border-box;	
 }
 .MultipleInput_password {
-	box-sizing: border-box;
+	display: block;
 }
 .MultipleInput_eye {
 	display: flex;

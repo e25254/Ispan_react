@@ -92,6 +92,7 @@ function HTML5ValidForm() {
 					value={user.email}
 					onChange={handleFieldChange}
 					required
+					style={{ marginTop: '5px', marginBottom: '5px' }}
 				/>
 				<span style={{ paddingLeft: '15px', color: 'red' }}>
 					{fieldErrors.email}
