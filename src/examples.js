@@ -22,8 +22,14 @@ import App_DatePicker from './testComponent/App_DatePicker';
 import HTML5ValidForm from './ex-1102-1/HTML5ValidForm';
 import LifeCycle from './ex-1102-2/LifeCycle';
 import User from './ex-1102-3/User';
+import FileUploadSample from './ex-1102-4/FileUploadSample';
 
 export const example = [
+	{
+		name: 'FileUploadSample ',
+		path: './ex-1102-4/FileUploadSample',
+		component: FileUploadSample,
+	},
 	{
 		name: 'User 從伺服器載入資料',
 		path: './ex-1102-3/User',

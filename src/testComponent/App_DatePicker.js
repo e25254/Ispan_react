@@ -39,7 +39,11 @@ const App_DatePicker = () => {
 			<input value={pickDate.days + '晚'} readOnly />
 			{/* TODO: 新增一個大日曆 兩個日曆能夠連動 */}
 			<div className="site-calendar-demo-card">
-				<Calendar fullscreen={false} onPanelChange={onPanelChange} />
+				<Calendar
+					fullscreen={false}
+					onPanelChange={onPanelChange}
+					value={moment('2022-03-03')}
+				/>
 			</div>
 		</>
 	);
