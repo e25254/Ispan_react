@@ -23,8 +23,7 @@ const App_DatePicker = () => {
 						moment.locale('zh-tw');
 						let start = moment(e[0]._d).format('YYYY-MM-DD');
 						let end = moment(e[1]._d).format('YYYY-MM-DD');
-						let howLong =
-							(+new Date(end) - +new Date(start)) / 86400000;
+						let howLong = (+new Date(end) - +new Date(start)) / 86400000;
 						console.log(howLong);
 						setPickDate({
 							startTime: start,
@@ -47,8 +46,7 @@ const App_DatePicker = () => {
 						moment.locale('zh-tw');
 						let start = moment(e[0]._d).format('YYYY-MM-DD');
 						let end = moment(e[1]._d).format('YYYY-MM-DD');
-						let howLong =
-							(+new Date(end) - +new Date(start)) / 86400000;
+						let howLong = (+new Date(end) - +new Date(start)) / 86400000;
 						console.log(howLong);
 						setPickDate({
 							startTime: start,
