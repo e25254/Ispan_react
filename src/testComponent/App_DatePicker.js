@@ -64,6 +64,7 @@ const App_DatePicker = () => {
 							? [moment(pickDate.startTime), moment(pickDate.endTime)]
 							: ''
 					}
+					popupClassName={'hiddenBox'}
 				/>
 			</Space>
 			{/* TODO: 新增一個大日曆 兩個日曆能夠連動 */}
