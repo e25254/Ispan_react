@@ -6,14 +6,8 @@
 }
 
 .hiddenBox .ant-space-item {
-	transition: 0s;
 	visibility: hidden;
 }
-.hiddenBox .ant-picker {
-	transition: 0s;
-}
-
 .hiddenBox .ant-picker-panel-container {
 	box-shadow: none;
-	transition: none;
 }
