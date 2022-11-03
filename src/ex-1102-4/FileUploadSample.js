@@ -46,7 +46,7 @@ function FileUploadSample() {
 		formData.append('avatar', selectedFile);
 
 		fetch(
-			'http://localhost:5555/upload-avatar', //server url
+			'http://localhost:3001/upload-avatar', //server url
 			{
 				method: 'POST',
 				body: formData,
@@ -55,7 +55,7 @@ function FileUploadSample() {
 			.then((response) => response.json())
 			.then((result) => {
 				console.log('Success:', result);
-				setImgServerUrl('http://localhost:5555/uploads/' + result.data.name);
+				setImgServerUrl('http://localhost:3001/uploads/' + result.data.name);
 			})
 			.catch((error) => {
 				console.error('Error:', error);

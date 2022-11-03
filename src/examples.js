@@ -24,8 +24,14 @@ import LifeCycle from './ex-1102-2/LifeCycle';
 import User from './ex-1102-3/User';
 import FileUploadSample from './ex-1102-4/FileUploadSample';
 import ImageDemo from './ex-1103-1/ImageDemo';
+import UserDemo from './ex-1103-2/UserDemo';
 
 export const example = [
+	{
+		name: 'UserDemo',
+		path: './ex-1103-2/UserDemo',
+		component: UserDemo,
+	},
 	{
 		name: 'ImageDemo',
 		path: './ex-1103-1/ImageDemo',
