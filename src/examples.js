@@ -23,8 +23,14 @@ import HTML5ValidForm from './ex-1102-1/HTML5ValidForm';
 import LifeCycle from './ex-1102-2/LifeCycle';
 import User from './ex-1102-3/User';
 import FileUploadSample from './ex-1102-4/FileUploadSample';
+import ImageDemo from './ex-1103-1/ImageDemo';
 
 export const example = [
+	{
+		name: 'ImageDemo',
+		path: './ex-1103-1/ImageDemo',
+		component: ImageDemo,
+	},
 	{
 		name: 'FileUploadSample ',
 		path: './ex-1102-4/FileUploadSample',
