@@ -24,12 +24,7 @@ function MultipleInput() {
 	return (
 		<>
 			<label>帳號：</label>
-			<input
-				type="text"
-				name="username"
-				value={user.username}
-				onChange={handleFieldChange}
-			/>
+			<input type="text" name="username" value={user.username} onChange={handleFieldChange} />
 			<br />
 			<div className="MultipleInput_passwordBox">
 				<label>密碼：</label>

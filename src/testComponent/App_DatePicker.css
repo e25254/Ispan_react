@@ -11,3 +11,7 @@
 .hiddenBox .ant-picker-panel-container {
 	box-shadow: none;
 }
+.hiddenBox .ant-picker {
+	transition: none;
+	transition-duration: 0s;
+}
