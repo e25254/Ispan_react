@@ -10,9 +10,9 @@ const App_DatePicker = () => {
 		endTime: '',
 		days: '',
 	});
-	const onPanelChange = (value, mode) => {
-		console.log(value.format('YYYY-MM-DD'), mode);
-	};
+	// const onPanelChange = (value, mode) => {
+	// 	console.log(value.format('YYYY-MM-DD'), mode);
+	// };
 	return (
 		<>
 			<Space direction="vertical" size={12}>
@@ -31,6 +31,11 @@ const App_DatePicker = () => {
 							days: howLong,
 						});
 					}}
+					value={
+						pickDate.startTime !== ''
+							? [moment(pickDate.startTime), moment(pickDate.endTime)]
+							: ''
+					}
 				/>
 			</Space>
 			<input value={pickDate.startTime} readOnly />
@@ -54,6 +59,11 @@ const App_DatePicker = () => {
 							days: howLong,
 						});
 					}}
+					value={
+						pickDate.startTime !== ''
+							? [moment(pickDate.startTime), moment(pickDate.endTime)]
+							: ''
+					}
 				/>
 			</Space>
 			{/* TODO: 新增一個大日曆 兩個日曆能夠連動 */}

@@ -4,7 +4,7 @@
 import { example } from './examples';
 import { useState } from 'react';
 function App() {
-	const [displayIndex, setDisplayIndex] = useState(0);
+	const [displayIndex, setDisplayIndex] = useState(5);
 	const selection = (
 		<select
 			value={displayIndex}
