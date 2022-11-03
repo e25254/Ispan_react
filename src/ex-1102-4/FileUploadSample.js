@@ -55,9 +55,7 @@ function FileUploadSample() {
 			.then((response) => response.json())
 			.then((result) => {
 				console.log('Success:', result);
-				setImgServerUrl(
-					'http://localhost:5555/uploads/' + result.data.name
-				);
+				setImgServerUrl('http://localhost:5555/uploads/' + result.data.name);
 			})
 			.catch((error) => {
 				console.error('Error:', error);

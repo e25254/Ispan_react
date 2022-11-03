@@ -1,4 +1,4 @@
-import { DatePicker, Space, Calendar } from 'antd';
+import { DatePicker, Space } from 'antd';
 import './App_DatePicker.css';
 import React, { useState } from 'react';
 import moment from 'moment/moment';
@@ -68,13 +68,6 @@ const App_DatePicker = () => {
 				/>
 			</Space>
 			{/* TODO: 新增一個大日曆 兩個日曆能夠連動 */}
-			{/* <div className="site-calendar-demo-card">
-				<Calendar
-					fullscreen={false}
-					onPanelChange={onPanelChange}
-					value={moment('2022-03-03')}
-				/>
-			</div> */}
 		</>
 	);
 };
