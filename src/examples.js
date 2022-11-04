@@ -26,8 +26,14 @@ import FileUploadSample from './ex-1102-4/FileUploadSample';
 import ImageDemo from './ex-1103-1/ImageDemo';
 import UserDemo from './ex-1103-2/UserDemo';
 import UserPage from './ex-1104-1/UserPage';
+import BS5Test from './ex-1104-2/BS5Test';
 
 export const example = [
+	{
+		name: 'BS5Test',
+		path: './ex-1104-2/BS5Test',
+		component: BS5Test,
+	},
 	{
 		name: 'UserPage',
 		path: './ex-1104-1/UserPage',
