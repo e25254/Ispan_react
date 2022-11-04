@@ -6,12 +6,14 @@ import locale from 'antd/es/date-picker/locale/zh_TW';
 const { RangePicker } = DatePicker;
 const App_DatePicker = () => {
 	let today = moment(new Date()).format('YYYY-MM-DD');
-	let tomorrow = new Date().getDate() + 1;
-	console.log(tomorrow);
+	let tomorrow = new Date(today);
+	tomorrow = moment(tomorrow.setDate(tomorrow.getDate() + 1)).format('YYYY-MM-DD');
+	// console.log(today);
+	// console.log(tomorrow);
 	const [pickDate, setPickDate] = useState({
 		startTime: today,
-		endTime: today,
-		days: 0,
+		endTime: tomorrow,
+		days: 1,
 	});
 	// const onPanelChange = (value, mode) => {
 	// 	console.log(value.format('YYYY-MM-DD'), mode);
@@ -29,24 +31,20 @@ const App_DatePicker = () => {
 						let start = moment(e[0]._d).format('YYYY-MM-DD');
 						let end = moment(e[1]._d).format('YYYY-MM-DD');
 						let howLong = (+new Date(end) - +new Date(start)) / 86400000;
-						console.log(howLong);
+						// console.log(howLong);
 						setPickDate({
 							startTime: start,
 							endTime: end,
 							days: howLong,
 						});
 					}}
-					value={
-						pickDate.startTime !== ''
-							? [moment(pickDate.startTime), moment(pickDate.endTime)]
-							: ''
-					}
+					value={[moment(pickDate.startTime), moment(pickDate.endTime)]}
 				/>
 			</Space>
 			<input value={pickDate.startTime} readOnly />
 			<input value={pickDate.endTime} readOnly />
 			<input value={pickDate.days + '晚'} readOnly />
-			<div className="DatePicker_Bigbox">
+			<div className="DatePicker_BigBox">
 				<div className="range_picker">
 					<h3>日期</h3>
 				</div>
@@ -62,18 +60,14 @@ const App_DatePicker = () => {
 							let start = moment(e[0]._d).format('YYYY-MM-DD');
 							let end = moment(e[1]._d).format('YYYY-MM-DD');
 							let howLong = (+new Date(end) - +new Date(start)) / 86400000;
-							console.log(howLong);
+							// console.log(howLong);
 							setPickDate({
 								startTime: start,
 								endTime: end,
 								days: howLong,
 							});
 						}}
-						value={
-							pickDate.startTime !== ''
-								? [moment(pickDate.startTime), moment(pickDate.endTime)]
-								: ''
-						}
+						value={[moment(pickDate.startTime), moment(pickDate.endTime)]}
 						popupClassName={'hiddenBox'}
 					/>
 				</Space>
@@ -82,16 +76,59 @@ const App_DatePicker = () => {
 				<input
 					type="date"
 					onChange={(e) => {
-						console.log(e.target.value);
+						// console.log(e.target.value);
+						let start = e.target.value;
+						// console.log('start', +new Date(start));
+						// console.log('end', +new Date(pickDate.endTime));
+						if (+new Date(pickDate.endTime) >= +new Date(start)) {
+							let howLong =
+								(+new Date(pickDate.endTime) - +new Date(start)) / 86400000;
+							setPickDate({
+								startTime: start,
+								endTime: pickDate.endTime,
+								days: howLong,
+							});
+						} else if (+new Date(pickDate.endTime) < +new Date(start)) {
+							let howLong =
+								(+new Date(start) - +new Date(pickDate.endTime)) / 86400000;
+							setPickDate({
+								startTime: pickDate.endTime,
+								endTime: start,
+								days: howLong,
+							});
+						}
+						// setPickDate({ startTime: start });
 					}}
-					value={pickDate.startTime ? pickDate.startTime : today}
+					// placeholder={'請選擇日期'}
+					value={pickDate.startTime !== today ? pickDate.startTime : today}
 				/>
 				<input
 					type="date"
 					onChange={(e) => {
-						console.log(e.target.value);
+						// console.log(e.target.value);
+						let end = e.target.value;
+						// console.log('start', +new Date(start));
+						// console.log('end', +new Date(pickDate.endTime));
+						if (+new Date(end) >= +new Date(pickDate.startTime)) {
+							let howLong =
+								(+new Date(end) - +new Date(pickDate.startTime)) / 86400000;
+							setPickDate({
+								startTime: pickDate.startTime,
+								endTime: end,
+								days: howLong,
+							});
+						} else if (+new Date(end) < +new Date(pickDate.startTime)) {
+							let howLong =
+								(+new Date(pickDate.startTime) - +new Date(end)) / 86400000;
+							setPickDate({
+								startTime: end,
+								endTime: pickDate.startTime,
+								days: howLong,
+							});
+						}
+						// setPickDate({ startTime: start });
 					}}
-					value={pickDate.endTime ? pickDate.endTime : today}
+					value={pickDate.endTime !== tomorrow ? pickDate.endTime : tomorrow}
 				/>
 			</div>
 			<div>
