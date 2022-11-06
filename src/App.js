@@ -4,7 +4,7 @@
 import { example } from './examples';
 import { useState } from 'react';
 function App() {
-	const [displayIndex, setDisplayIndex] = useState(8);
+	const [displayIndex, setDisplayIndex] = useState(0);
 	const selection = (
 		<select
 			value={displayIndex}
@@ -15,7 +15,7 @@ function App() {
 			{example.map((v, i) => {
 				return (
 					<option key={i} value={i}>
-						{v.name}
+						{v.name} vb
 					</option>
 				);
 			})}
