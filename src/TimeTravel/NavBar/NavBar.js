@@ -2,12 +2,11 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import './NavBar.css';
 
 function navbar() {
 	return (
 		<>
-			<Navbar bg="light" expand="lg" className="Big_navbar">
+			<Navbar bg="light" expand="lg" className="TimeTravel_Navbar">
 				<Container>
 					<Navbar.Brand href=" ">React-Bootstrap</Navbar.Brand>
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
