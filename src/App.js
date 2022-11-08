@@ -15,7 +15,7 @@ function App() {
 			{example.map((v, i) => {
 				return (
 					<option key={i} value={i}>
-						{v.name} vb
+						{v.name}
 					</option>
 				);
 			})}

@@ -8,7 +8,7 @@ import pic4 from './Hotel_Pic/1-4.jpg';
 import HotelRomeData from './hotel_room.json';
 
 function ShowPic() {
-	console.log(HotelRomeData);
+	// console.log(HotelRomeData);
 	return (
 		<>
 			<div className="Hotel_showPic">
