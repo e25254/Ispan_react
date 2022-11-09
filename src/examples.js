@@ -28,12 +28,18 @@ import UserDemo from './ex-1103-2/UserDemo';
 import UserPage from './ex-1104-1/UserPage';
 import BS5Test from './ex-1104-2/BS5Test';
 import TimeTravel_Hotel from './TimeTravel/TimeTravel_Hotel';
+import headRoom from './testComponent/headRoom';
 
 export const example = [
 	{
 		name: 'TimeTravel_Hotel',
 		path: './TimeTravel/TimeTravel_Hotel',
 		component: TimeTravel_Hotel,
+	},
+	{
+		name: 'headRoom',
+		path: './testComponent/headRoom',
+		component: headRoom,
 	},
 	{
 		name: 'BS5Test',

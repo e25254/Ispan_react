@@ -11,11 +11,13 @@ import HotelDetail from './HotelDetail/HotelDetail';
 import Comment from './Comment/Comment';
 import MapButton from './MapButton/MapButton';
 import CommentSelector from './Comment/CommentSelector';
+import BottomBar from './BottomBar/BottomBar';
 
 function TimeTravel_Hotel() {
 	return (
 		<>
 			<Navbar />
+			<BottomBar />
 			<Carousel />
 			<div className="container">
 				<Breadcrumb />
