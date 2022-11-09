@@ -83,20 +83,33 @@ function BottomBar() {
 					/>
 				</div>
 				<div>
-					<button
+					<select
+						className="BottomBar_inputDate"
+						style={{
+							width: '60px',
+							textAlign: 'center',
+						}}
+					>
+						<option style={{}}>房型</option>
+					</select>
+					{/* <button
 						className="BottomBar_inputDate"
 						style={{ width: '60px', padding: '0px' }}
 					>
 						家庭房
-					</button>
+					</button> */}
 				</div>
 				<div>
-					<button
+					<select
 						className="BottomBar_inputDate"
-						style={{ width: '60px', padding: '0px' }}
+						style={{
+							width: '60px',
+							padding: '0px 8px',
+							textAlign: 'center',
+						}}
 					>
-						一間
-					</button>
+						<option style={{}}>房間數</option>
+					</select>
 				</div>
 			</div>
 			<div className="BottomBar_Buy">

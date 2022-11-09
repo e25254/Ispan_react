@@ -129,6 +129,9 @@
 	overflow: hidden;
 	height: 30px;
 	justify-content: center;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 .BottomBar_Buy {
 	/* outline: 1px solid green; */

@@ -1,292 +1,46 @@
 import React from 'react';
-import Headroom from 'react-headroom';
-import './HeadRoom.css';
-
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import SplitButton from 'react-bootstrap/SplitButton';
 function headRoom() {
 	return (
 		<>
-			<Headroom
-				style={{
-					webkitTransition: 'all .5s ease-in-out',
-					mozTransition: 'all .5s ease-in-out',
-					oTransition: 'all .5s ease-in-out',
-					transition: 'all .5s ease-in-out',
-				}}
+			<p>12u3hfkmkqwemdkqmwe</p>
+			<br />
+			<p>12u3hfkmkqwemdkqmwe</p>
+			<br />
+			<p>12u3hfkmkqwemdkqmwe</p>
+			<br />
+			<p>12u3hfkmkqwemdkqmwe</p>
+			<br />
+			<p>12u3hfkmkqwemdkqmwe</p>
+			<br />
+			<p>12u3hfkmkqwemdkqmwe</p>
+			<br />
+			<p>12u3hfkmkqwemdkqmwe</p>
+			<br />
+			<p>12u3hfkmkqwemdkqmwe</p>
+			<br />
+			<p>12u3hfkmkqwemdkqmwe</p>
+			<br />
+			<p>12u3hfkmkqwemdkqmwe</p>
+			<br />
+			<p>12u3hfkmkqwemdkqmwe</p>
+			<br />
+			<p>12u3hfkmkqwemdkqmwe</p>
+			<br />
+			<DropdownButton
+				id={`dropdown-button-drop-up`}
+				drop="up"
+				variant="secondary"
+				title={'家庭房'}
 			>
-				<div>
-					<h1>12i3jijfieqf</h1>
-				</div>
-			</Headroom>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum
-				aspernatur eius quia! Tempora quia soluta similique, maxime, dignissimos voluptatem
-				officia minima unde possimus aliquid excepturi sunt incidunt nisi quo.
-			</p>
-			<br />
+				<Dropdown.Item eventKey="1">Action</Dropdown.Item>
+				<Dropdown.Item eventKey="2">Another action</Dropdown.Item>
+				<Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
+				<Dropdown.Divider />
+				<Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
+			</DropdownButton>
 		</>
 	);
 }
