@@ -1,39 +1,19 @@
 import React from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
-import SplitButton from 'react-bootstrap/SplitButton';
-function headRoom() {
+function BottomBarDropDownBtn() {
 	return (
 		<>
-			<p>12u3hfkmkqwemdkqmwe</p>
-			<br />
-			<p>12u3hfkmkqwemdkqmwe</p>
-			<br />
-			<p>12u3hfkmkqwemdkqmwe</p>
-			<br />
-			<p>12u3hfkmkqwemdkqmwe</p>
-			<br />
-			<p>12u3hfkmkqwemdkqmwe</p>
-			<br />
-			<p>12u3hfkmkqwemdkqmwe</p>
-			<br />
-			<p>12u3hfkmkqwemdkqmwe</p>
-			<br />
-			<p>12u3hfkmkqwemdkqmwe</p>
-			<br />
-			<p>12u3hfkmkqwemdkqmwe</p>
-			<br />
-			<p>12u3hfkmkqwemdkqmwe</p>
-			<br />
-			<p>12u3hfkmkqwemdkqmwe</p>
-			<br />
-			<p>12u3hfkmkqwemdkqmwe</p>
-			<br />
 			<DropdownButton
 				id={`dropdown-button-drop-up`}
 				drop="up"
-				variant="secondary"
 				title={'家庭房'}
+				className="BottomBar_inputDate"
+				style={{
+					width: '60px',
+					textAlign: 'center',
+					overflow: 'visible',
+				}}
 			>
 				<Dropdown.Item eventKey="1">Action</Dropdown.Item>
 				<Dropdown.Item eventKey="2">Another action</Dropdown.Item>
@@ -45,4 +25,4 @@ function headRoom() {
 	);
 }
 
-export default headRoom;
+export default BottomBarDropDownBtn;

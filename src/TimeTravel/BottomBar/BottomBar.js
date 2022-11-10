@@ -90,7 +90,7 @@ function BottomBar() {
 							textAlign: 'center',
 						}}
 					>
-						<option style={{}}>房型</option>
+						<option style={{}}>房間類型</option>
 					</select>
 					{/* <button
 						className="BottomBar_inputDate"

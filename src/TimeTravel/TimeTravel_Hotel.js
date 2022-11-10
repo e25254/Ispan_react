@@ -12,6 +12,7 @@ import Comment from './Comment/Comment';
 import MapButton from './MapButton/MapButton';
 import CommentSelector from './Comment/CommentSelector';
 import BottomBar from './BottomBar/BottomBar';
+import MobileFooter from './MobileFooter/MobileFooter';
 
 function TimeTravel_Hotel() {
 	return (
@@ -50,6 +51,8 @@ function TimeTravel_Hotel() {
 				</div>
 				<Comment />
 			</div>
+			<MobileFooter />
+			<div style={{ height: '120px', backgroundColor: '#aeaeae' }}></div>
 		</>
 	);
 }
