@@ -1,4 +1,5 @@
 import React from 'react';
+import './HotelDetail.scss';
 import { BsFillDiamondFill } from 'react-icons/bs';
 function HotelDetail() {
 	return (

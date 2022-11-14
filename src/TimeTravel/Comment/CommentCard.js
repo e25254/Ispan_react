@@ -1,6 +1,6 @@
 import React from 'react';
 import { Rate } from 'antd';
-
+import './Comment.scss';
 function CommentCard() {
 	return (
 		<div className="Comment_Bottom">
