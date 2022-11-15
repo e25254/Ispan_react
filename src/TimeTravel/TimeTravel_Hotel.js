@@ -64,29 +64,33 @@ function TimeTravel_Hotel() {
 			<Carousel />
 			<HashChange allPart={allPart} />
 			<div className="container">
-				<Breadcrumb />
-				<h2 style={{ color: '#4D4D4D', marginBottom: '20px' }}>
-					{/* TODO:拿到真實名稱 */}路境行旅(Finders Hotel)
-				</h2>
-				<Rate />
-				<IconBar />
-				<h4 style={{ color: '#59d8a1', fontSize: '22px', marginBottom: '30px' }}>
-					{/* TODO:拿到真實價格 */}TWD$599
-				</h4>
-				<div id="Hotel_part1" ref={Hotel_part1} className="givePadding">
+				<div className="d-flex">
+					<div className="Hotel_part0">
+						<Breadcrumb />
+						<h2 style={{ color: '#4D4D4D', marginBottom: '20px' }}>
+							{/* TODO:拿到真實名稱 */}路境行旅(Finders Hotel)
+						</h2>
+						<Rate />
+						<IconBar />
+						<h4 style={{ color: '#59d8a1', fontSize: '22px', marginBottom: '30px' }}>
+							{/* TODO:拿到真實價格 */}TWD$599
+						</h4>
+					</div>
+				</div>
+				<div id="Hotel_part1" ref={Hotel_part1} className="givePadding col-lg-8">
 					<h2 style={{ color: '#4D4D4D', margin: '40px 0px' }}>房型介紹</h2>
 					<ShowPic />
 				</div>
-				<div id="Hotel_part2" ref={Hotel_part2} className="givePadding">
+				<div id="Hotel_part2" ref={Hotel_part2} className="givePadding col-lg-8">
 					<h2 style={{ color: '#4D4D4D', margin: '40px 0px' }}>注意事項</h2>
 					<HotelNotice />
 				</div>
-				<div id="Hotel_part3" ref={Hotel_part3} className="givePadding">
+				<div id="Hotel_part3" ref={Hotel_part3} className="givePadding col-lg-8">
 					<h2 style={{ color: '#4D4D4D', margin: '40px 0px' }}>商品說明</h2>
 					<HotelDetail />
 					<MapButton />
 				</div>
-				<div id="Hotel_part4" ref={Hotel_part4} className="givePadding">
+				<div id="Hotel_part4" ref={Hotel_part4} className="givePadding col-lg-8">
 					<div className="d-flex" style={{ alignItems: 'center' }}>
 						<h2 style={{ color: '#4D4D4D', margin: '40px 0px', marginRight: 'auto' }}>
 							旅客評價
