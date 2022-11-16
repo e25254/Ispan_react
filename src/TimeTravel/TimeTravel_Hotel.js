@@ -14,6 +14,7 @@ import CommentSelector from './Comment/CommentSelector';
 import BottomBar from './BottomBar/BottomBar';
 import MobileFooter from './MobileFooter/MobileFooter';
 import HashChange from './HashChange/HashChange';
+import ComputerLikeAdd from './ComputerLikeAdd/ComputerLikeAdd';
 
 function TimeTravel_Hotel() {
 	const Hotel_part1 = useRef();
@@ -65,7 +66,7 @@ function TimeTravel_Hotel() {
 			<HashChange allPart={allPart} />
 			<div className="container">
 				<div className="d-flex">
-					<div className="Hotel_part0">
+					<div className="Hotel_part0 Hotel_part0_left">
 						<Breadcrumb />
 						<h2 style={{ color: '#4D4D4D', marginBottom: '20px' }}>
 							{/* TODO:拿到真實名稱 */}路境行旅(Finders Hotel)
@@ -75,6 +76,11 @@ function TimeTravel_Hotel() {
 						<h4 style={{ color: '#59d8a1', fontSize: '22px', marginBottom: '30px' }}>
 							{/* TODO:拿到真實價格 */}TWD$599
 						</h4>
+					</div>
+					<div className="Hotel_part0_right">
+						<div className="Hotel_part0_right_icon d-flex">
+							<ComputerLikeAdd />
+						</div>
 					</div>
 				</div>
 				<div id="Hotel_part1" ref={Hotel_part1} className="givePadding col-lg-8">
